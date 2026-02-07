@@ -1,0 +1,4 @@
+[build]
+  base = "dostiva-site"
+  publish = "dist"
+  command = "npm ci && npm run build"
