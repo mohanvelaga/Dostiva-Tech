@@ -8,8 +8,8 @@ export default function Footer() {
       <div className="max-w-7xl mx-auto px-6 grid md:grid-cols-4 gap-8 text-sm">
 
         <div>
-          <h3 className="text-white font-bold mb-2">MedConsult</h3>
-          <p>Leading medical admissions consultancy.</p>
+          <h3 className="text-white font-bold mb-2">Dostiva Tech</h3>
+          <p>Providing quality IT training and services in India.</p>
         </div>
 
         <div>
@@ -21,9 +21,9 @@ export default function Footer() {
 
         <div>
           <h4 className="text-white font-semibold mb-2">Services</h4>
-          <p>MBBS Abroad</p>
-          <p>NEET Counseling</p>
-          <p>Documentation</p>
+          <p>Web Development</p>
+          <p>Mobile App Development</p>
+          <p>Training Programs</p>
         </div>
 
         <div>
