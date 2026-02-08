@@ -4,7 +4,7 @@ import SEO from "../Components/SEO";
 const coursesSchema = {
   "@context": "https://schema.org",
   "@type": "ItemList",
-  "name": "Training Programs by Dostiva Tecnologis",
+  "name": "Training Programs by Dostiva Tech",
   "itemListElement": [
     {
       "@type": "Course",
@@ -24,7 +24,7 @@ const coursesSchema = {
   ],
   "provider": {
     "@type": "Organization",
-    "name": "Dostiva Tecnologis",
+    "name": "Dostiva Tech",
     "url": "https://tech.dostiva.site"
   }
 };
@@ -34,7 +34,7 @@ export default function TrainingPage() {
     <>
       <Schema schema={coursesSchema} />
       <SEO
-  title="Training | Dostiva Technologis"
+  title="Training | Dostiva Tech"
   description="Professional IT training in web development, software, and modern technologies."
 />
       <div className="max-w-7xl mx-auto px-4 py-16 overflow-hidden pointer-events-none z-0 bg-slate-50">

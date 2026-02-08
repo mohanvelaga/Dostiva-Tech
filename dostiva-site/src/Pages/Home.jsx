@@ -12,7 +12,7 @@ import Schema from "../Components/Schema";
 const orgSchema = {
   "@context": "https://schema.org",
   "@type": "Organization",
-  "name": "Dostiva Tecnologis",
+  "name": "Dostiva Tech",
   "url": "https://www.tech.dostiva.site",
   "logo": "https://www.tech.dostiva.site/logo.png", // change when you upload logo
   "sameAs": [
@@ -20,7 +20,7 @@ const orgSchema = {
     "https://www.facebook.com/dostiva",
     "https://www.instagram.com/dostiva"
   ],
-  "description": "Dostiva Tecnologis provides IT services, software development, and professional training programs.",
+  "description": "Dostiva Tech provides IT services, software development, and professional training programs.",
   "contactPoint": {
     "@type": "ContactPoint",
     "telephone": "+91-9182849769",
@@ -35,8 +35,8 @@ export default function Home() {
     <>
       <Schema schema={orgSchema} />
       <SEO
-        title="Dostiva Technologis | IT Services & Training"
-        description="Build. Learn. Grow. with Dostiva Technologis. We provide IT solutions and professional training."
+        title="Dostiva Tech | IT Services & Training"
+        description="Build. Learn. Grow. with Dostiva Tech. We provide IT solutions and professional training."
       />
       
       <Hero />

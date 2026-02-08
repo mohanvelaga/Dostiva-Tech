@@ -5,10 +5,10 @@ import SEO from "../Components/SEO";
 const servicesSchema = {
   "@context": "https://schema.org",
   "@type": "Service",
-  "name": "IT Services by Dostiva Tecnologis",
+  "name": "IT Services by Dostiva Tech",
   "provider": {
     "@type": "Organization",
-    "name": "Dostiva Tecnologis",
+    "name": "Dostiva Tech ",
     "url": "https://tech.dostiva.site"
   },
   "areaServed": "IN",
@@ -27,8 +27,8 @@ export default function ServicesPage() {
     <>
       <Schema schema={servicesSchema} />
       <SEO
-  title="Services | Dostiva Technologis"
-  description="Web development, software solutions, API & backend, and IT support services by Dostiva Technologis."
+  title="Services | Dostiva Tech"
+  description="Web development, software solutions, API & backend, and IT support services by Dostiva Tech."
 />
     <div className="max-w-7xl mx-auto px-4 py-16 overflow-hidden pointer-events-none z-0 bg-slate-50">
       <div className="absolute -top-24 -left-24 w-80 h-80 pointer-events-none bg-brand-orange/10 rounded-full blur-3xl" />

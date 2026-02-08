@@ -5,16 +5,16 @@ import SEO from "../Components/SEO";
 const localBusinessSchema = {
   "@context": "https://schema.org",
   "@type": "LocalBusiness",
-  name: "Dostiva Technologis",
+  name: "Dostiva Tech",
   image: "https://www.tech.dostiva.site/logo.png",
   url: "https://tech.dostiva.site/contact",
   telephone: "+91-9182849769",
   address: {
     "@type": "PostalAddress",
-    streetAddress: "Your Office Address",
-    addressLocality: "Your City",
-    addressRegion: "Your State",
-    postalCode: "Your PIN",
+    streetAddress: "Dostiva Tech,Kodandarama weight bridge,bypass road,towords ummalada road",
+    addressLocality: "Anakapalli",
+    addressRegion: "Andhara Pradesh",
+    postalCode: "531001",
     addressCountry: "IN",
   },
 };
@@ -24,8 +24,8 @@ export default function ContactPage() {
     <>
       <Schema schema={localBusinessSchema} />
       <SEO
-        title="Contact | Dostiva Technologis"
-        description="Contact Dostiva Technologis for IT services and professional training."
+        title="Contact | Dostiva Tech"
+        description="Contact Dostiva Tech for IT services and professional training."
       />
 
       {/* ✅ Make parent relative */}
