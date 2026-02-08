@@ -9,7 +9,10 @@ const DOTS = Array.from({ length: 60 }).map(() => ({
 
 export default function CSSParticles() {
   return (
-    <div className="absolute inset-0 z-10 overflow-hidden pointer-events-none">
+    <div
+      className="absolute inset-0 overflow-hidden pointer-events-none"
+      style={{ zIndex: -100 }}
+    >
       {DOTS.map((dot, i) => (
         <span
           key={i}
@@ -25,3 +28,4 @@ export default function CSSParticles() {
     </div>
   );
 }
+

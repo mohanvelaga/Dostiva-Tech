@@ -3,7 +3,11 @@ export default function WaveBackground({
   front = "#dbeafe",
 }) {
   return (
-    <div className="absolute bottom-0 left-0 w-full overflow-hidden leading-none z-0 pointer-events-none">
+    <div
+  className="absolute bottom-0 left-0 w-full overflow-hidden leading-none pointer-events-none"
+  style={{ zIndex: -100 }}
+>
+
       
       {/* Back triangle wave */}
       <svg

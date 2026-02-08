@@ -37,9 +37,9 @@ export default function TrainingPage() {
   title="Training | Dostiva Technologis"
   description="Professional IT training in web development, software, and modern technologies."
 />
-      <div className="max-w-7xl mx-auto px-4 py-16 overflow-hidden bg-slate-50">
-        <div className="absolute -top-24 -left-24 w-80 h-80 bg-brand-orange/10 rounded-full blur-3xl" />
-        <div className="absolute -bottom-24 -right-24 w-80 h-80 bg-blue-500/10 rounded-full blur-3xl" />        
+      <div className="max-w-7xl mx-auto px-4 py-16 overflow-hidden pointer-events-none z-0 bg-slate-50">
+        <div className="absolute -top-24 -left-24 w-80 h-80 pointer-events-none z-0 bg-brand-orange/10 rounded-full blur-3xl" />
+        <div className="absolute -bottom-24 -right-24 w-80 h-80 pointer-events-none bg-blue-500/10 rounded-full blur-3xl" />        
       <h1 className="text-4xl font-bold mb-6">Training Programs</h1>
       <p className="text-slate-600 mb-10">
         Practical, job-ready training designed by industry professionals.

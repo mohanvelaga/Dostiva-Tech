@@ -7,18 +7,18 @@ export default function Hero() {
   return (
     <section className="relative overflow-hidden text-white">
       {/* Gradient Background */}
-      <div className="absolute inset-0 bg-gradient-to-br from-brand-blue via-blue-700 to-blue-900 z-0" />
+      <div className="absolute inset-0 bg-gradient-to-br from-brand-blue via-blue-700 to-blue-900  pointer-events-none z-0" />
       <CSSParticles />
 
       {/* ✅ Particles ABOVE gradient */}
      
 
       {/* Blur shapes */}
-      <div className="absolute -top-24 -left-24 w-96 h-96 bg-brand-orange/30 rounded-full blur-3xl z-0" />
-      <div className="absolute top-1/2 -right-24 w-96 h-96 bg-cyan-400/20 rounded-full blur-3xl z-0" />
+      <div className="absolute -top-24 -left-24 w-96 h-96 pointer-events-none  bg-brand-orange/30 rounded-full blur-3xl z-0" />
+      <div className="absolute top-1/2 -right-24 w-96 h-96 pointer-events-none  bg-cyan-400/20 rounded-full blur-3xl z-0" />
 
       {/* ✅ Content ABOVE particles */}
-      <div className="relative z-20 max-w-7xl mx-auto px-4 py-24 grid md:grid-cols-2 gap-12 items-center">
+      <div className="relative pointer-events-none z-20 max-w-7xl mx-auto px-4 py-24 grid md:grid-cols-2 gap-12 items-center">
         
         <Motion.div
           initial={{ opacity: 0, y: 24 }}

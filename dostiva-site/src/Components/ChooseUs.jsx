@@ -40,7 +40,7 @@ const item = {
 
 export default function WhyChooseUs() {
   return (
-    <section className="py-24 bg-gradient-to-b from-white to-slate-50">
+    <section className="py-24 bg-gradient-to-b pointer-events-none from-white to-slate-50">
       <div className="max-w-7xl mx-auto px-4">
         <h2 className="text-3xl font-bold mb-10 text-center">
           Why Choose <span className="text-brand-orange">Dostiva</span>

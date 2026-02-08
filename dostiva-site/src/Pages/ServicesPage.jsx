@@ -30,9 +30,9 @@ export default function ServicesPage() {
   title="Services | Dostiva Technologis"
   description="Web development, software solutions, API & backend, and IT support services by Dostiva Technologis."
 />
-    <div className="max-w-7xl mx-auto px-4 py-16 overflow-hidden bg-slate-50">
-      <div className="absolute -top-24 -left-24 w-80 h-80 bg-brand-orange/10 rounded-full blur-3xl" />
-             <div className="absolute -bottom-24 -right-24 w-80 h-80 bg-blue-500/10 rounded-full blur-3xl" />
+    <div className="max-w-7xl mx-auto px-4 py-16 overflow-hidden pointer-events-none z-0 bg-slate-50">
+      <div className="absolute -top-24 -left-24 w-80 h-80 pointer-events-none bg-brand-orange/10 rounded-full blur-3xl" />
+             <div className="absolute pointer-events-none z-0 -bottom-24 -right-24 w-80 h-80  bg-blue-500/10 rounded-full blur-3xl" />
             <h1 className="text-4xl font-bold mb-6">Our Services</h1>
       <p className="text-slate-600 mb-10">
         We build scalable, modern software solutions for businesses.
