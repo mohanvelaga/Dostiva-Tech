@@ -1,4 +1,5 @@
 import nodemailer from "nodemailer";
+import process from "node:process";
 
 export const handler = async (event) => {
   if (event.httpMethod !== "POST") {
@@ -6,8 +7,7 @@ export const handler = async (event) => {
   }
 
   try {
-   const { name, email, phone, message } = JSON.parse(event.body || "{}");
-
+    const { name, email, phone, message } = JSON.parse(event.body || "{}");
 
     if (!name || !email || !message) {
       return {
@@ -22,7 +22,7 @@ export const handler = async (event) => {
       secure: true,
       auth: {
         user: process.env.EMAIL_USER,
-        pass: process.env.EMAIL_PASS, // App password
+        pass: process.env.EMAIL_PASS, // Gmail App Password
       },
     });
 
@@ -34,9 +34,9 @@ export const handler = async (event) => {
         <h2>New Contact Message</h2>
         <p><strong>Name:</strong> ${name}</p>
         <p><strong>Email:</strong> ${email}</p>
+        <p><strong>Phone:</strong> ${phone || "N/A"}</p>
         <p><strong>Message:</strong></p>
         <p>${message}</p>
-        <p><strong>Phone:</strong> ${phone || "N/A"}</p>
       `,
     });
 
@@ -45,7 +45,7 @@ export const handler = async (event) => {
       body: JSON.stringify({ ok: true }),
     };
   } catch (err) {
-    console.error(err);
+    console.error("Email error:", err);
     return {
       statusCode: 500,
       body: JSON.stringify({ error: "Failed to send email" }),
