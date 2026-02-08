@@ -3,14 +3,14 @@ import { motion as Motion } from "framer-motion";
 import { Link } from "react-router-dom";
 
 // Tech icons
-import python from "../assets/python.png";
-import java from "../assets/java.png";
-import react from "../assets/react.png";
-import django from "../assets/django.png";
-import node from "../assets/node.js.png";
-import mongodb from "../assets/mongodb.png";
-import docker from "../assets/docker.png";
-import aws from "../assets/aws.png";
+import python from "../assets/Python.png";
+import java from "../assets/Java.png";
+import react from "../assets/React.png";
+import django from "../assets/Django.png";
+import node from "../assets/Node.js.png";
+import mongodb from "../assets/Mongodb.png";
+import docker from "../assets/Docker.png";
+import aws from "../assets/AWS.png";
 import excel from "../assets/excel.png";
 
 const courses = [
