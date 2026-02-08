@@ -43,7 +43,7 @@ export default function Testimonials() {
       
       {/* 🔺 Top Wave (Rotated 180°) */}
       <div className="absolute top-0 left-0 w-full rotate-180">
-        <WaveBackground back="#" front="#93c5fd" />
+        <WaveBackground back="#bfdbfe" front="#93c5fd" />
       </div>
 
       {/* Content */}
