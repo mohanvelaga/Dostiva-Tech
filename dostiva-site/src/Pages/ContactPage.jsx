@@ -6,9 +6,9 @@ const localBusinessSchema = {
   "@context": "https://schema.org",
   "@type": "LocalBusiness",
   name: "Dostiva Technologis",
-  image: "https://www.dostiva.com/logo.png",
-  url: "https://www.dostiva.com",
-  telephone: "+91-XXXXXXXXXX",
+  image: "https://www.tech.dostiva.site/logo.png",
+  url: "https://tech.dostiva.site/contact",
+  telephone: "+91-9182849769",
   address: {
     "@type": "PostalAddress",
     streetAddress: "Your Office Address",

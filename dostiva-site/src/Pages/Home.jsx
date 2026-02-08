@@ -13,8 +13,8 @@ const orgSchema = {
   "@context": "https://schema.org",
   "@type": "Organization",
   "name": "Dostiva Tecnologis",
-  "url": "https://www.dostiva.com",
-  "logo": "https://www.dostiva.com/logo.png", // change when you upload logo
+  "url": "https://www.tech.dostiva.site",
+  "logo": "https://www.tech.dostiva.site/logo.png", // change when you upload logo
   "sameAs": [
     "https://www.linkedin.com/company/dostiva",
     "https://www.facebook.com/dostiva",
@@ -23,7 +23,7 @@ const orgSchema = {
   "description": "Dostiva Tecnologis provides IT services, software development, and professional training programs.",
   "contactPoint": {
     "@type": "ContactPoint",
-    "telephone": "+91-XXXXXXXXXX",
+    "telephone": "+91-9182849769",
     "contactType": "customer support",
     "areaServed": "IN",
     "availableLanguage": ["English"]
