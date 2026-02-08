@@ -8,7 +8,7 @@ import java from "../assets/Java.png";
 import react from "../assets/React.png";
 import django from "../assets/Django.png";
 import node from "../assets/Node.js.png";
-import mongodb from "../assets/Mongodb.png";
+import mongodb from "../assets/MongoDB.png";
 import docker from "../assets/Docker.png";
 import aws from "../assets/AWS.png";
 import excel from "../assets/excel.png";
