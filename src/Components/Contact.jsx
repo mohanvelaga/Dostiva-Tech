@@ -1,7 +1,8 @@
 import { useLocation } from "react-router-dom";
 import { useState } from "react";
 import { sendContact } from "../api/contactApi"
-
+import WhatsAppButton from "./whatsappbutton"
+import { AlignCenter, AlignLeft } from "lucide-react";
 export default function Contact() {
   const { state } = useLocation();
 
@@ -39,7 +40,7 @@ export default function Contact() {
           <h2 className="text-3xl font-bold mb-4">Get in Touch</h2>
           <p className="text-slate-600 mb-4">Ready to grow with us? Let’s talk.</p>
           <p>Email: info@dostiva.com</p>
-          <p>Phone: +91 9192849769</p>
+          <p>Phone: +91 6304596203</p>
 
           {state?.course && (
             <p className="mt-4 text-slate-600">
@@ -49,6 +50,7 @@ export default function Contact() {
               </span>
             </p>
           )}
+          <WhatsAppButton  />
         </div>
 
         <form  

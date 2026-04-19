@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import { motion as Motion } from "framer-motion";
-import logo from "../assets/web-app-manifest-192x192";
+import logo from "../assets/dostiva-logo-128.png";
 
 
 export default function Navbar() {
@@ -23,7 +23,7 @@ export default function Navbar() {
             transition={{ type: "spring", stiffness: 300, damping: 20 }}
           />
           <span className="font-extrabold text-xl md:text-2xl text-brand-blue leading-none">
-            Dostiva <span className="text-brand-orange">Tech</span>
+            Dostiva <span className="text-brand-orange">Technologies</span>
           </span>
         </Link>
 

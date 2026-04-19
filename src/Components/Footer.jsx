@@ -8,7 +8,7 @@ export default function Footer() {
       <div className="max-w-7xl mx-auto px-6 grid md:grid-cols-4 gap-8 text-sm">
 
         <div>
-          <h3 className="text-white font-bold mb-2">Dostiva Tech</h3>
+          <h3 className="text-white font-bold mb-2">Dostiva Technologies</h3>
           <p>Providing quality IT training and services in India.</p>
         </div>
 
@@ -30,7 +30,7 @@ export default function Footer() {
             <h4 className="text-white font-semibold mb-2">Contact</h4>
 
                <p className="flex items-center gap-2">
-                <FaPhoneAlt /> +91 9052926868
+                <FaPhoneAlt /> +91 6304596203
               </p>
 
                <p className="flex items-center gap-2">

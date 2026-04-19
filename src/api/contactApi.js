@@ -7,13 +7,13 @@ export const sendContact = async (data) => {
       "Content-Type": "application/json",
     },
     body: JSON.stringify(data),
-  })
+  });
 
-  const result = await res.json()
+  const text = await res.text();
 
-  if (!res.ok) {
-    throw new Error(result.error || "Something went wrong")
+  try {
+    return JSON.parse(text);
+  } catch {
+    throw new Error("Invalid JSON response");
   }
-
-  return result
-}
+};
