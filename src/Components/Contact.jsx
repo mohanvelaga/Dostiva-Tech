@@ -3,6 +3,7 @@ import { useState } from "react";
 import { sendContact } from "../api/contactApi"
 import WhatsAppButton from "./whatsappbutton"
 import { AlignCenter, AlignLeft } from "lucide-react";
+
 export default function Contact() {
   const { state } = useLocation();
 
@@ -14,25 +15,24 @@ export default function Contact() {
   const handleSubmit = async (e) => {
     e.preventDefault();
 
-    const res = await sendContact({
-      name,
-      email,
-      message,
-      phone,
-      app: "dostiva-tech",
-    });
+  const res = await sendContact({
+    name,
+    email,
+    message,
+    phone,
+    app: "dostiva-tech",
+   });
 
-    if (res.ok) {
-      alert("✅ Message sent successfully!");
-      setName("");
-      setEmail("");
-      setPhone("");
-      setMessage("");
-    } else {
-      alert("❌ Failed to send message. Try again.");
-    }
-  };
-
+  if (res.ok) {
+     alert("✅ Message sent successfully!");
+     setName("");
+     setEmail("");
+     setPhone("");
+     setMessage("");
+   } else {
+     alert(res.data?.error || "❌ Failed to send message.");
+   }
+  }
   return (
     <section id="contact" className="relative py-20">
       <div className="relative z-10 max-w-7xl mx-auto px-4 grid md:grid-cols-2 gap-8">

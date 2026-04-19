@@ -1,4 +1,4 @@
-const BASE_URL = import.meta.env.VITE_API_URL
+const BASE_URL = 'https://dostivatechbackend-1.onrender.com'
 
 export const sendContact = async (data) => {
   const res = await fetch(`${BASE_URL}/api/contact`, {
@@ -11,9 +11,16 @@ export const sendContact = async (data) => {
 
   const text = await res.text();
 
+  let parsed = {};
   try {
-    return JSON.parse(text);
+    parsed = text ? JSON.parse(text) : {};
   } catch {
-    throw new Error("Invalid JSON response");
+    parsed = {};
   }
+
+  return {
+    ok: res.ok,
+    status: res.status,
+    data: parsed,
+  };
 };
