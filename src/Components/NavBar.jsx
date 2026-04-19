@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import { motion as Motion } from "framer-motion";
-import logo from "../assets/logo-128.png";
+import logo from "../assets/web-app-manifest-192x192";
 
 
 export default function Navbar() {
